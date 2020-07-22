@@ -1,18 +1,55 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <el-row>
+      <el-col :span="16" :offset="4">
+        <div class="home">
+          <router-link to="/string">
+            <div class="app-item">
+              <div class="icon">
+                <svg t="1593334876779" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2265" width="64" height="64"><path d="M128 213.333333C128 166.4 166.4 128 213.333333 128L810.666667 128C857.6 128 896 166.4 896 213.333333L896 810.666667C896 857.6 857.6 896 810.666667 896L213.333333 896C165.973333 896 128 857.6 128 810.666667L128 213.333333M533.333333 469.333333 490.666667 469.333333C455.253333 469.333333 426.666667 440.746667 426.666667 405.333333 426.666667 369.92 455.253333 341.333333 490.666667 341.333333L533.333333 341.333333C568.746667 341.333333 597.333333 369.92 597.333333 405.333333L682.666667 405.333333C682.666667 322.986667 615.68 256 533.333333 256L490.666667 256C408.32 256 341.333333 322.986667 341.333333 405.333333 341.333333 487.68 408.32 554.666667 490.666667 554.666667L533.333333 554.666667C568.746667 554.666667 597.333333 583.253333 597.333333 618.666667 597.333333 654.08 568.746667 682.666667 533.333333 682.666667L490.666667 682.666667C455.253333 682.666667 426.666667 654.08 426.666667 618.666667L341.333333 618.666667C341.333333 701.013333 408.32 768 490.666667 768L533.333333 768C615.68 768 682.666667 701.013333 682.666667 618.666667 682.666667 536.32 615.68 469.333333 533.333333 469.333333Z" p-id="2266" fill="#1296db"></path></svg>
+              </div>
+              <div class="title">生成随机字符串</div>
+              <div class="description">按照需求自定义生成字符串</div>
+            </div>
+          </router-link>
+        </div>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+  export default {
 
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
   }
-}
 </script>
+
+<style type="scss">
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .home {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 50px;
+  }
+  .app-item {
+    box-shadow: 0 0 35px 0 rgba(0,0,0,.2);
+    padding: 10px;
+    margin: 15px;
+  }
+  .icon {
+    text-align: center;
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .description {
+    color: gray;
+    text-align: center;
+    font-size: 14px;
+  }
+</style>
