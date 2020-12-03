@@ -13,22 +13,45 @@ const routes:RouteConfig[] = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/random-string',
+    name: 'RandomString',
+    component:()=>import(/* webpackChunkName: "string" */ '../views/RandomString.vue')
   },
   {
-    path: '/string',
-    name: 'String',
-    component:()=>import(/* webpackChunkName: "string" */ '../views/String.vue')
+    path: '/compress-json',
+    name: 'CompressJSON',
+    component:()=>import(/* webpackChunkName: "string" */ '../views/json/CompressJSON.vue')
+  },
+  {
+    path: '/format-json',
+    name: 'FormatJSON',
+    component:()=>import(/* webpackChunkName: "string" */ '../views/json/FormatJSON.vue')
+  },
+  {
+    path: '/binary-tree/create-binary-tree',
+    name: 'CreateBinaryTree',
+    component:()=>import(/* webpackChunkName: "string" */ '../views/binary_tree/ArrayToBinaryTree.vue')
+  },
+  {
+    path: '/image-conversion',
+    name: 'ImageConversion',
+    component:()=>import(/* webpackChunkName: "string" */ '../views/ImageConversion.vue')
+  },
+  {
+    path: '/base-conversion',
+    name: 'BaseConversion',
+    component:()=>import(/* webpackChunkName: "string" */ '../views/BaseConversion.vue')
+  },
+  {
+    path: '/ky-test',
+    name: 'Test',
+    component:()=>import(/* webpackChunkName: "string" */ '../views/Test.vue')
   }
 ]
 
 const router = new VueRouter({
+  // mode: 'history',
   routes
-})
+});
 
 export default router

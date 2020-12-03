@@ -1,0 +1,55 @@
+.development {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  font-size: 20px;
+  font-weight: 500;
+  transform: translate(-50%, -50%);
+}
+.fd-card {
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  padding: 20px;
+  .content {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .len {
+    max-width: 210px;
+    margin: 10px auto;
+  }
+  .btn {
+    margin: 25px auto;
+    text-align: center;
+    /*padding-bottom: 80px;*/
+  }
+}
+.fd-tile {
+  font-size: 24px;
+  text-align: center;
+  padding: 8px 0;
+}
+.string-select {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.select-item {
+  justify-self: center;
+}
+.res {
+  text-align: center;
+  max-width: 220px;
+  margin: 0 auto;
+  padding: 10px;
+  div {
+    color:  #9C27B0;
+    background-color: #c1f4cd;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+.btn {
+  margin: 25px auto;
+  text-align: center;
+}
