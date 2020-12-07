@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <img :src="image" ref="myImage" @load="getImageSize" alt="">
+    <img ref="myImage" :src="image" alt="" @load="getImageSize">
   </div>
 </template>
 
@@ -11,9 +11,9 @@ export default {
       image: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2700073372,1831939333&fm=26&gp=0.jpg'
     }
   },
-  methods:{
+  methods: {
     getImageSize() {
-      console.log(this.$refs.myImage.offsetHeight);
+      console.log(this.$refs.myImage.offsetHeight)
     }
   }
 }

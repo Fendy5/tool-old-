@@ -1,7 +1,7 @@
-import Vue from 'vue';
+import Vue from 'vue'
 
-import './styles/quasar.scss';
-import '@quasar/extras/material-icons/material-icons.css';
+import './styles/quasar.scss'
+import '@quasar/extras/material-icons/material-icons.css'
 import {
   Quasar,
   QLayout,
@@ -23,15 +23,15 @@ import {
   QSelect,
   QUploader,
   Notify,
-  QAjaxBar,
-} from 'quasar';
+  QAjaxBar
+} from 'quasar'
 
 Vue.use(Quasar, {
   config: {
     notify: {
       position: 'top',
-      timeout: 2500,
-    },
+      timeout: 2500
+    }
   },
   components: {
     QLayout,
@@ -52,11 +52,10 @@ Vue.use(Quasar, {
     QInput,
     QUploader,
     QSelect,
-    QAjaxBar,
+    QAjaxBar
   },
-  directives: {
-  },
+  directives: {},
   plugins: {
-    Notify,
-  },
-});
+    Notify
+  }
+})
